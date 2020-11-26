@@ -7,7 +7,6 @@ from users.recommend.myRecommend import *
 def recall(trainset,testset,N,recommend,movie_matrix,user_matrix):
     all=0
     rec_list=0
-    # rs=recommendSys()
     for user,movie in trainset.items():
         if user_matrix[user] in testset.keys():
             test_u=testset[user_matrix[user]]
